@@ -120,4 +120,10 @@
   .discovery_animation {
     transform: scale(0.7);
   }
+  .accessibility_menu {
+    font-size: 14px;
+  }
+  .login_social button {
+    font-size: 18px;
+  }
 }

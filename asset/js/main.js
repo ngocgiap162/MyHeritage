@@ -1,9 +1,9 @@
-// di chuyển modal dialog bằng modal header
+// move modal dialog
 $('.modal-dialog').draggable({
   handle: ".modal-header"
 });
 
-// ngăn ẩn dropdown khi click vào bên trong dropdown
+// stop hide dropdown when click inside dropdown
 $(document).on('click', '.header_nav .dropdown-menu', function (e) {
   e.stopPropagation();
 });
@@ -25,15 +25,15 @@ document.onscroll = function () {
   // devices animation
   var devices = document.querySelectorAll('.device_item')
   for (var device of devices) {
-    let x = device.offsetTop - window.scrollY;
+    let x = device.offsetTop - window.scrollY - 300;
     let y = x > 0 ? x : 1;
-    let a = 400 / y;
+    let a = 300 / y;
     let b = a > 1 ? 1 : a < 0.3 ? 0.3 : a;
     device.style.transform = 'scale(' + b + ')';
     device.style.opacity = a;
   }
 
-  // devices animation
+  // records animation
   {
     var records = document.querySelectorAll('.record_item')
     var recordsAnimation = document.querySelector('.records_animation')
@@ -50,7 +50,16 @@ document.onscroll = function () {
     records[6].style.left = 370 * b + 'px';
   }
 
+  // discovery animation
+  // var boxItems = document.querySelectorAll('.box_item')
+  // for (var boxItem of boxItems) {
+  //   let x = boxItem.offsetTop - window.scrollY - 300;
+  //   let y = x > 0 ? x : 1;
+  //   let a = 300 / y;
+  //   let b = a > 1 ? 1 : a < 0.3 ? 0.3 : a;
+    
+  // }
 
-  
+
 }
 
