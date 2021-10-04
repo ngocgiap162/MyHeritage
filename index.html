@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/responsive.css">
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <!-- signup section -->
+        <div class="signup_section">
+            <div class="container-md">
+                <div class="header d-flex mb-3">
+                    <div class="logo"> </div>
+                    <ul class="header_nav d-flex align-center">
+                        <li data-toggle="modal" data-target="#loginModal" class="text-light mr-4">Log in</li>
+                        <li class="dropdown mr-md-4">
+                            <a class="text-white d-flex align-center" data-toggle="dropdown">
+                                <div class="accessibility_button_icon mr-2"></div>
+                                <span class="d-none d-md-block">Accessibility</span>
+                            </a>
+                            <div class="accessibility_menu dropdown-menu dropdown-menu-right px-3 py-2">
+                                <div class="accessibility_close_btn accessibility_icon"></div>
+                                <div class="font_size d-flex justify-content-between mt-4">
+                                    <span>Font size</span>
+                                    <button class="btn">A+</button>
+                                    <button class="btn">A-</button>
+                                    <button class="btn">Normal size</button>
+                                </div>
+                                <ul>
+                                    <li class="border-bottom">
+                                        <div class="border-right pr-2">
+                                            <div class="accessibility_icon for_visually_impaired"></div>
+                                        </div>
+                                        <div class="pl-3">Adjustment for visually impaired</div>
+                                    </li>
+                                    <li class="border-bottom">
+                                        <div class="border-right pr-2">
+                                            <div class="accessibility_icon for_color_blind"></div>
+                                        </div>
+                                        <div class="pl-3">Adjustment for color blind</div>
+                                    </li>
+                                    <li class="border-bottom">
+                                        <div class="border-right pr-2">
+                                            <div class="accessibility_icon hide_animations"></div>
+                                        </div>
+                                        <div class="pl-3">Hide animations and flashes</div>
+                                    </li>
+                                    <li class="border-bottom">
+                                        <div class="border-right pr-2">
+                                            <div class="accessibility_icon typical_view"></div>
+                                        </div>
+                                        <div class="pl-3">Typical View</div>
+                                    </li>
+                                    <li>
+                                        <div class="border-right pr-2">
+                                            <div class="accessibility_icon statement"></div>
+                                        </div>
+                                        <div class="pl-3">Accessibility statement</div>
+                                    </li>
+                                </ul>
+                                <div class="fs-11 border-bottom border-top py-1 mt-2 text-center warning">This
+                                    website is under accessibility adjustment
+                                    process</div>
+                                <div class="fs-11"><a class="text-dark" href="#">powered by Allyable</a></div>
+                            </div>
+                        </li>
+                        <li class="text-light d-none d-md-flex align-center">
+                            <div class="globe mr-2"></div>
+                            <span data-toggle="modal" data-target="#languagesModal">English</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex">
+                    <div class="desktop_captions text-white col text-center text-md-left">
+                        <h1> Discover your family story </h1>
+                        <h5>
+                            Grow your family tree, find new relatives, and explore billions of historical records with a
+                            14-day FREE trial
+                        </h5>
+                    </div>
+                    <div class="signup_form bg-white form-group p-4 d-none d-md-block">
+                        <div class="signup_title mb-3">
+                            Start your free trial
+                        </div>
+                        <div class="signup_social">
+                            <button class="facebook_login_btn btn d-flex w-100 mb-3">
+                                <div class="social_icon"> </div>
+                                <div class="text-center flex-grow-1">Start with Facebook</div>
+                            </button>
+                            <button class="google_login_btn btn d-flex border w-100">
+                                <div class="social_icon google_icon"></div>
+                                <div class="text-center flex-grow-1">Start with Google</div>
+                            </button>
+                        </div>
+                        <div class="divider d-flex py-2">
+                            <div class="divider_left"></div>
+                            <span class="mx-3">or</span>
+                            <div class="divider_right"></div>
+                        </div>
+                        <div>Sign Up with Email</div>
+                        <div class="sex_select">
+                            <input type="radio" name="gender">
+                            <label class="mr-3">Male</label>
+                            <input type="radio" name="gender">
+                            <label>Female</label>
+                        </div>
+                        <div class="form-row mb-3">
+                            <div class="col">
+                                <input class="form-control shadow-none" type="text" placeholder="First name">
+                            </div>
+                            <div class="col">
+                                <input class="form-control shadow-none" type="text" placeholder="Last name">
+                            </div>
+                        </div>
+                        <input type="email" class="form-control shadow-none mb-3" placeholder="Email address">
+                        <div class="form-row mb-3">
+                            <div class="col-6">
+                                <select name="" id="" class="form-control">
+                                    <option value="">Year of birth</option>
+                                    <option value="2007">2007</option>
+                                    <option value="2006">2006</option>
+                                    <option value="2005">2005</option>
+                                    <option value="2004">2004</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2002">2002</option>
+                                    <option value="2001">2001</option>
+                                    <option value="2000">2000</option>
+                                    <option value="1999">1999</option>
+                                    <option value="1998">1998</option>
+                                    <option value="1997">1997</option>
+                                    <option value="1996">1996</option>
+                                    <option value="1995">1995</option>
+                                    <option value="1994">1994</option>
+                                    <option value="1993">1993</option>
+                                    <option value="1992">1992</option>
+                                    <option value="1991">1991</option>
+                                    <option value="1990">1990</option>
+                                    <option value="1989">1989</option>
+                                    <option value="1988">1988</option>
+                                    <option value="1987">1987</option>
+                                    <option value="1986">1986</option>
+                                    <option value="1985">1985</option>
+                                    <option value="1984">1984</option>
+                                    <option value="1983">1983</option>
+                                    <option value="1982">1982</option>
+                                    <option value="1981">1981</option>
+                                    <option value="1980">1980</option>
+                                    <option value="1979">1979</option>
+                                    <option value="1978">1978</option>
+                                    <option value="1977">1977</option>
+                                    <option value="1976">1976</option>
+                                    <option value="1975">1975</option>
+                                    <option value="1974">1974</option>
+                                    <option value="1973">1973</option>
+                                    <option value="1972">1972</option>
+                                    <option value="1971">1971</option>
+                                    <option value="1970">1970</option>
+                                    <option value="1969">1969</option>
+                                    <option value="1968">1968</option>
+                                    <option value="1967">1967</option>
+                                    <option value="1966">1966</option>
+                                    <option value="1965">1965</option>
+                                    <option value="1964">1964</option>
+                                    <option value="1963">1963</option>
+                                    <option value="1962">1962</option>
+                                    <option value="1961">1961</option>
+                                    <option value="1960">1960</option>
+                                    <option value="1959">1959</option>
+                                    <option value="1958">1958</option>
+                                    <option value="1957">1957</option>
+                                    <option value="1956">1956</option>
+                                    <option value="1955">1955</option>
+                                    <option value="1954">1954</option>
+                                    <option value="1953">1953</option>
+                                    <option value="1952">1952</option>
+                                    <option value="1951">1951</option>
+                                    <option value="1950">1950</option>
+                                    <option value="1949">1949</option>
+                                    <option value="1948">1948</option>
+                                    <option value="1947">1947</option>
+                                    <option value="1946">1946</option>
+                                    <option value="1945">1945</option>
+                                    <option value="1944">1944</option>
+                                    <option value="1943">1943</option>
+                                    <option value="1942">1942</option>
+                                    <option value="1941">1941</option>
+                                    <option value="1940">1940</option>
+                                    <option value="1939">1939</option>
+                                    <option value="1938">1938</option>
+                                    <option value="1937">1937</option>
+                                    <option value="1936">1936</option>
+                                    <option value="1935">1935</option>
+                                    <option value="1934">1934</option>
+                                    <option value="1933">1933</option>
+                                    <option value="1932">1932</option>
+                                    <option value="1931">1931</option>
+                                    <option value="1930">1930</option>
+                                    <option value="1929">1929</option>
+                                    <option value="1928">1928</option>
+                                    <option value="1927">1927</option>
+                                    <option value="1926">1926</option>
+                                    <option value="1925">1925</option>
+                                    <option value="1924">1924</option>
+                                    <option value="1923">1923</option>
+                                    <option value="1922">1922</option>
+                                    <option value="1921">1921</option>
+                                    <option value="1920">1920</option>
+                                    <option value="1919">1919</option>
+                                    <option value="1918">1918</option>
+                                    <option value="1917">1917</option>
+                                    <option value="1916">1916</option>
+                                    <option value="1915">1915</option>
+                                    <option value="1914">1914</option>
+                                    <option value="1913">1913</option>
+                                    <option value="1912">1912</option>
+                                    <option value="1911">1911</option>
+                                    <option value="1910">1910</option>
+                                    <option value="1909">1909</option>
+                                    <option value="1908">1908</option>
+                                    <option value="1907">1907</option>
+                                    <option value="1906">1906</option>
+                                    <option value="1905">1905</option>
+                                    <option value="1904">1904</option>
+                                    <option value="1903">1903</option>
+                                    <option value="1902">1902</option>
+                                    <option value="1901">1901</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="father_and_mother">
+                            <span>My father</span>
+                            <div class="form-row mb-3">
+                                <div class="col">
+                                    <input class="form-control shadow-none" type="text" placeholder="First name">
+                                </div>
+                                <div class="col">
+                                    <input class="form-control shadow-none" type="text" placeholder="Last name">
+                                </div>
+                            </div>
+                            <span>My mother</span>
+                            <div class="form-row mb-3">
+                                <div class="col">
+                                    <input class="form-control shadow-none" type="text" placeholder="First name">
+                                </div>
+                                <div class="col">
+                                    <input class="form-control shadow-none" type="text" placeholder="Last name">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="signup_continue form-control border-0 bg_f56932 mb-3">
+                            Continue
+                        </button>
+                        <a href="#" class="border-bottom w-100 d-block text_f56932">Import tree (GEDCOM)</a>
+                        <div class="text-center fs-12 mb-3 px-2">
+                            <span>By signing up, you agree to the</span>
+                            <a class="text_f56932" href="#">Service terms</a>
+                            <span>and</span>
+                            <a class="text_f56932" href="#">Privacy Policy.</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center d-block d-md-none mt-5">
+                    <btn class="start_free_trial_btn text-white btn mx-auto bg_f56932 px-4">
+                        Start free trial
+                    </btn>
+                </div>
+            </div>
+        </div>
+        <!-- signup section -->
+
+        <!-- dna section -->
+        <section class="dna_section pb-0">
+            <div class="dna_bg container-fluid">
+                <div class="dna_text text-center">
+                    <h1>Amaze yourself</h1>
+                    <p>
+                        The simple MyHeritage DNA test will reveal your unique ethnic background, and match you with
+                        newfound relatives. Discover the specific groups you descend from among <b>2,114 geographic
+                            regions</b>,
+                        and take family history to the next level with the most affordable DNA test on the market.
+                    </p>
+                </div>
+                <div class="dna_btn d-flex justify-content-center">
+                    <a href="#" class="btn mx-auto">
+                        Learn more
+                    </a>
+                </div>
+                <div class="dna_ethnicity">
+                    <div
+                        class="num_regions_badge rounded-circle text_f56932 text-center d-flex flex-column justify-content-center bg-white">
+                        <div class="num_regions">2,114</div>
+                        <div class="badge_label text-uppercase fs-11 px-3">
+                            Geographic regions
+                        </div>
+                    </div>
+                    <div class="ethnicities_information_card bg-white">
+                        <div class="user_image"></div>
+                        <ul class="ethnicities_information">
+                            <li class="d-flex fs-13 justify-content-between">
+                                <div>
+                                    <div class="d-flex align-center">
+                                        <i class="ethnicity_color d-block rounded-circle mr-2"></i>
+                                        <span>English</span>
+                                    </div>
+                                    <div class="d-flex align-center fs-11 pl-3">
+                                        <i class="ethnicity_color_small d-block rounded-circle mr-1"></i>
+                                        <span>England (Yorkshire)</span>
+                                    </div>
+                                </div>
+                                <div> 50% </div>
+                            </li>
+                            <li class="d-flex fs-13 justify-content-between">
+                                <div>
+                                    <div class="d-flex align-center">
+                                        <i class="ethnicity_color d-block rounded-circle mr-2"></i>
+                                        <span>Scandinavian</span>
+                                    </div>
+                                    <div class="d-flex align-center fs-11 pl-3">
+                                        <i class="ethnicity_color_small d-block rounded-circle mr-1"></i>
+                                        <span>Norway (Viken)</span>
+                                    </div>
+                                </div>
+                                <div> 20% </div>
+                            </li>
+                            <li class="d-flex fs-13 justify-content-between">
+                                <div>
+                                    <div class="d-flex align-center">
+                                        <i class="ethnicity_color d-block rounded-circle mr-2"></i>
+                                        <span>Italian</span>
+                                    </div>
+                                    <div class="d-flex align-center fs-11 pl-3">
+                                        <i class="ethnicity_color_small d-block rounded-circle mr-1"></i>
+                                        <span>Italy (Abruzzo)</span>
+                                    </div>
+                                </div>
+                                <div> 15% </div>
+                            </li>
+                            <li class="d-flex fs-13 justify-content-between">
+                                <div>
+                                    <div class="d-flex align-center">
+                                        <i class="ethnicity_color d-block rounded-circle mr-2"></i>
+                                        <span>North African</span>
+                                    </div>
+                                </div>
+                                <div> 10% </div>
+                            </li>
+                            <li class="d-flex fs-13 justify-content-between">
+                                <div>
+                                    <div class="d-flex align-center">
+                                        <i class="ethnicity_color d-block rounded-circle mr-2"></i>
+                                        <span>+2 more</span>
+                                    </div>
+                                </div>
+                                <div> 5% </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nostalgia section -->
+        <section class="nostalgia_section">
+            <div class="container">
+                <div class="row align-center">
+                    <div class="col-md-5 pr-lg-5 text-md-left">
+                        <h1 class="font-weight-bold mb-3">Animate your family photos</h1>
+                        <p class="m-0">Deep Nostalgia™ — the sensation that’s taken the internet by storm!</p>
+                        <p class="font-weight-bold">Over 92 million animations and counting!</p>
+                    </div>
+                    <div class="col-md-7">
+                        <img src="./asset/img/deep_nostalgia.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Famaly tree section -->
+        <section class="famaly_tree_section">
+            <div class="d-flex flex-column justify-content-center px-2">
+                <div class="famaly_tree_text text-center">
+                    <h1 class="mb-4">Create your online family tree</h1>
+                    <p>Your past begins with your family tree and it's easy to build one on MyHeritage.
+                        Add names, dates, photos
+                        and stories and share with your family.</p>
+                </div>
+                <div class="tree_chart d-flex mx-auto pb-5">
+                    <div class="brancher mr-3 mr-md-5">
+                        <div class="father_parents mx-auto mb-4">
+                            <img src="./asset/img/father_parents.png" alt="">
+                        </div>
+                        <div class="father">
+                            <img src="./asset/img/father.png" alt="">
+                        </div>
+                        <div class="line horizontal_line"></div>
+                        <div class="line vertical_line"></div>
+                    </div>
+                    <div class="brancher ml-3 ml-md-5">
+                        <div class="father_parents mx-auto mb-4">
+                            <img src="./asset/img/mother_parents.png" alt="">
+                        </div>
+                        <div class="mother">
+                            <img src="./asset/img/mother.png" alt="">
+                        </div>
+                        <div class="line horizontal_line"></div>
+                        <div class="line vertical_line"></div>
+                    </div>
+                    <div class="line horizontal_line"></div>
+                    <div class="line vertical_line"></div>
+                </div>
+                <btn class="start_free_trial_btn text-white btn mx-auto bg_f56932 px-4">
+                    Start free trial
+                </btn>
+            </div>
+
+        </section>
+
+        <!-- records section -->
+        <section class="records_section">
+            <div class="container-fluid">
+                <div class="records_text mx-auto text-center">
+                    <h1>Search billions of records</h1>
+                    <p>
+                        Dive into our huge international records database – just search a name to learn more about your
+                        ancestors. With exclusive content and accurate results we'll help you uncover more than you ever
+                        imagined.
+                    </p>
+                </div>
+                <div class="records_animation_container">
+                    <div class="records_animation mx-auto">
+                        <div class="record_item railway_record"></div>
+                        <div class="record_item passport_record"></div>
+                        <div class="record_item census_record"></div>
+                        <div class="record_item id_man_record"></div>
+                        <div class="record_item letter_record"></div>
+                        <div class="record_item id_woman_record"></div>
+                        <div class="record_item newspapers_record"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- discovery section -->
+        <section class="discovery_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-7">
+                        <h1>Easy automatic discoveries</h1>
+                        <p>
+                            The minute you create a family tree, we'll begin searching for you. Look forward to email
+                            alerts
+                            with Smart Matches and Record Matches revealing new family tree connections, records and
+                            newspaper articles about your ancestors.
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-5">
+                        <div class="discovery_animation">
+                            <div class="discovery_animation_item box_front"></div>
+                            <div class="discovery_animation_item box_bg"></div>
+                            <div class="discovery_animation_item box_open_back"></div>
+                            <div class="discovery_animation_item box_open_front"></div>
+                            <div class="discovery_animation_item box_photo_family"></div>
+                            <div class="discovery_animation_item box_photo_id"></div>
+                            <div class="discovery_animation_item box_photo_table"></div>
+                            <div class="discovery_animation_item box_photo_portrait"></div>
+                            <div class="discovery_animation_item box_photo_people"></div>
+                            <div class="discovery_animation_item box_photo_cert"></div>
+                            <div class="discovery_animation_item box_photo_blue"></div>
+                            <div class="discovery_animation_item box_star"></div>
+                            <div class="discovery_animation_item "></div>
+                            <div class="discovery_animation_item "></div>
+                            <div class="discovery_animation_item "></div>
+                            <div class="discovery_animation_item "></div>
+                            <div class="discovery_animation_item "></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- community section -->
+        <section class="community_section">
+            <div class="container">
+                <div class="community_text mx-auto">
+                    <h1 class='mb-4'>Join the MyHeritage community</h1>
+                    <p>
+                        Millions of families around the world use MyHeritage to explore their history. Collaborate with
+                        members and join the thousands who reunite with long-lost relatives every single day through our
+                        network.
+                    </p>
+                </div>
+                <div class="row justify-content-center pt-4 pb-5">
+                    <div class="px-3">
+                        <b>4.7 Billion</b> profiles
+                    </div>
+                    <div class="px-3">
+                        <b>93 Million</b> users
+                    </div>
+                    <div class="px-3">
+                        <b>82 Million</b> family trees
+                    </div>
+                </div>
+                <div class="community_image mx-auto">
+                    <img src="./asset/img/community-image.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- devices section -->
+        <section class="devices_section bg_f56932">
+            <div class="container">
+                <div class="sprite devices_logo"></div>
+                <div class="devices_text mx-auto">
+                    <h1 class="mb-4">Anywhere, anytime and on any device</h1>
+                    <p>
+                        Research your family history with three award-winning products, all private and secure. Sync
+                        between
+                        them and enjoy a captivating journey to your past, wherever you are.
+                    </p>
+                </div>
+                <div class="devices_animation row pt-4">
+                    <div class="col-12 col-sm-4">
+                        <div class="animation_item tablet_animation">
+                            <div class="icon_text">Tablet</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <div class="animation_item mobile_animation">
+                            <div class="icon_text">Mobile</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <div class="animation_item desktop_animation">
+                            <div class="icon_text">Mobile</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- quotes section -->
+        <section class="quotes_section">
+            <div class="container">
+                <div class="quotes_logos_with_links mb-5">
+                    <h1 class="featured_on_title">Featured on:</h1>
+                    <div class="row">
+                        <div class="col-6 col-md-3 mb-4 mb-md-0">
+                            <a href="#">
+                                <img class="quotes_logo" src="./asset/img/Logos_US_1.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <a href="#">
+                                <img class="quotes_logo" src="./asset/img/Logos_US_2.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <a href="#">
+                                <img class="quotes_logo" src="./asset/img/Logos_US_3.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <a href="#">
+                                <img class="quotes_logo" src="./asset/img/Logos_US_4.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="carouselExampleIndicators" class="quotes carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="quote carousel-item active">
+                            <q>
+                                WOW! MyHeritage is amazing! I cannot believe how super simple it is to research and
+                                create a
+                                family tree with very little information in hand. This is simply above and beyond
+                                anything
+                                else I've seen on the web! Thank you! Thank you! Thank you!
+                            </q>
+                            <p>R. Sloan, Gallatin, Tennessee, USA</p>
+                        </div>
+                        <div class="quote carousel-item">
+                            <q>
+                                I have been trying to piece together my family for over 35 years and Smart Matches made
+                                it
+                                go past my wildest dreams. Thanks to MyHeritage, this is a wonderful and really exciting
+                                hobby to really dig deep into.
+                            </q>
+                            <p>D. Henry, North Lauderdale, Florida, USA</p>
+                        </div>
+                        <div class="quote carousel-item">
+                            <q>
+                                MyHeritage is a great place to develop a family tree. In less than two weeks time I was
+                                able
+                                to track my family back to 1877. This is in no small part due to the vast storehouse of
+                                data
+                                that is available through MyHeritage.
+                            </q>
+                            <p>W. Vacca, Bonita Springs, Florida, USA
+                            </p>
+                        </div>
+                        <div class="quote carousel-item">
+                            <q>
+                                With MyHeritage I am having the time of my life. Thanks for offering such a fabulous
+                                site
+                                that is going to help so many!
+                            </q>
+                            <p>K. N. Mathias , South Fulton, Tennessee, USA</p>
+                        </div>
+                        <div class="quote carousel-item">
+                            <q>
+                                Thanks to MyHeritage I finally was able to unlock the mystery! It has been a great
+                                revelation to find so many family members after so many years.
+                            </q>
+                            <p>A. Horst, Charlotte, North Carolina, USA</p>
+                        </div>
+                    </div>
+                    <ul class="quotes_sprite d-flex justify-content-center carousel-indicators m-0">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="thumb0 active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1" class="thumb1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2" class="thumb2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3" class="thumb3"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="4" class="thumb4"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- discover section -->
+        <section class="discover_section">
+            <div class="container">
+                <h1>Discover and treasure <br> your unique family history</h1>
+                <btn class="famaly_tree_btn text-white btn mx-auto bg_f56932 px-4">
+                    Start free trial
+                </btn>
+            </div>
+        </section>
+
+        <!-- footer section -->
+        <section class="footer_section">
+            <div class="container">
+                <div class="row">
+                    <div class="footer_company col-12 col-lg-4">
+                        <div class="logo mb-3"> </div>
+                        <div class="row m-0 mb-3">
+                            <a class="btn go_premium mr-3 mb-3" href="#">Go Premium</a>
+                            <a class="btn order_dna_kits mb-3" href="#">Order DNA kits</a>
+                        </div>
+                        <div class="d-none d-lg-block">
+                            <div class="footer_social mb-3 d-flex">
+                                <div class="mr-2">
+                                    <a class="logo facebook" href="#"></a>
+                                </div>
+                                <div>
+                                    <a class="logo twitter" href="#"></a>
+                                </div>
+                            </div>
+                            <div class="copyright fs-12 text-left">
+                                Copyright © 2021 MyHeritage Ltd.
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="footer_column_links col-12 col-lg-8 row text-left">
+                        <ul class="col mb-3">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Sign up for free</a></li>
+                            <li><a href="#">DNA</a></li>
+                            <li><a href="#">Family tree</a></li>
+                            <li><a href="#">Historical records</a></li>
+                            <li><a href="#">Colorize photos</a></li>
+                            <li><a href="#">Enhance photos</a></li>
+                            <li><a href="#">Animate photos</a></li>
+                            <li><a href="#">Family Tree Builder</a></li>
+                        </ul>
+                        <ul class="col mb-3">
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">User stories</a></li>
+                            <li><a href="#">Our team</a></li>
+                        </ul>
+                        <ul class="col mb-3">
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">Service terms</a></li>
+                            <li><a href="#">Cookie info</a></li>
+                            <li><a href="#">Accessibility</a></li>
+                            <li><a href="#">California Rights</a></li>
+                            <li><a href="#">Price list</a></li>
+                            <li><a href="#">Knowledge Base</a></li>
+                        </ul>
+                    </div>
+                    <div class="col d-block d-lg-none">
+                        <div class="footer_social mb-3 d-flex">
+                            <div class="mr-2">
+                                <a class="logo facebook" href="#"></a>
+                            </div>
+                            <div>
+                                <a class="logo twitter" href="#"></a>
+                            </div>
+                        </div>
+                        <div class="copyright fs-12 text-left">
+                            Copyright © 2021 MyHeritage Ltd.
+                        </div>
+                    </div>
+                </div>
+                <ul class="footer_name_directory d-flex flex-wrap justify-content-center">
+                    <li><a href="#">A</a></li>
+                    <li><a href="#">B</a></li>
+                    <li><a href="#">C</a></li>
+                    <li><a href="#">D</a></li>
+                    <li><a href="#">E</a></li>
+                    <li><a href="#">F</a></li>
+                    <li><a href="#">G</a></li>
+                    <li><a href="#">H</a></li>
+                    <li><a href="#">I</a></li>
+                    <li><a href="#">J</a></li>
+                    <li><a href="#">K</a></li>
+                    <li><a href="#">L</a></li>
+                    <li><a href="#">M</a></li>
+                    <li><a href="#">N</a></li>
+                    <li><a href="#">O</a></li>
+                    <li><a href="#">P</a></li>
+                    <li><a href="#">Q</a></li>
+                    <li><a href="#">R</a></li>
+                    <li><a href="#">S</a></li>
+                    <li><a href="#">T</a></li>
+                    <li><a href="#">U</a></li>
+                    <li><a href="#">V</a></li>
+                    <li><a href="#">W</a></li>
+                    <li><a href="#">X</a></li>
+                    <li><a href="#">Y</a></li>
+                    <li><a href="#">Z</a></li>
+                    <li><a href="#">Other</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- modals -->
+        <!-- modal login -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content p-3">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title" id="exampleModalLabel">Start your free trial</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="login_social">
+                            <button class="facebook_login_btn btn d-flex w-100 mb-3">
+                                <div class="social_icon"> </div>
+                                <div class="text-center flex-grow-1">Log in with Facebook</div>
+                            </button>
+                            <button class="google_login_btn btn d-flex border w-100">
+                                <div class="social_icon google_icon"></div>
+                                <div class="text-center flex-grow-1">Log in with Google</div>
+                            </button>
+                        </div>
+                        <div class="divider d-flex py-2">
+                            <div class="divider_left"></div>
+                            <span class="mx-3">or</span>
+                            <div class="divider_right"></div>
+                        </div>
+                        <div>Sign Up with Email</div>
+                        <input type="email" class="form-control shadow-none mb-3" placeholder="Email address">
+                        <input type="password" class="form-control shadow-none mb-3" placeholder="Password">
+                        <button class="signup_continue form-control border-0 bg_f56932 mb-3">
+                            Log in
+                        </button>
+                        <a href="#" class="border-bottom fs-12 w-100 d-block text_f56932 pb-3">Forgot your password?</a>
+                        <div class="fs-12 pt-3">
+                            <span>Not a member yet?</span>
+                            <a class="text_f56932" href="#">Sign up for free</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- modal languages -->
+        <div class="modal fade" id="languagesModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Select your language</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body row m-0">
+                        <ul class="col-3">
+                            <li><a href="#">Afrikaans</a></li>
+                            <li><a href="#">Català</a></li>
+                            <li><a href="#">Česky</a></li>
+                            <li><a href="#">Dansk</a></li>
+                            <li><a href="#">Deutsch</a></li>
+                            <li><a href="#">Estonian</a></li>
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Español</a></li>
+                            <li><a href="#">Français</a></li>
+                            <li><a href="#">한국어</a></li>
+                            <li><a href="#">Hrvatski</a></li>
+                        </ul>
+                        <ul class="col-3">
+                            <li><a href="#">Italiano</a></li>
+                            <li><a href="#">Latviešu</a></li>
+                            <li><a href="#">Lietuvių</a></li>
+                            <li><a href="#">Magyar</a></li>
+                            <li><a href="#">Mĕlayu</a></li>
+                            <li><a href="#">Nederlands</a></li>
+                            <li><a href="#">日本語</a></li>
+                            <li><a href="#">Norsk</a></li>
+                            <li><a href="#">Polski</a></li>
+                            <li><a href="#">Português - Brasil</a></li>
+                            <li><a href="#">Português</a></li>
+                        </ul>
+                        <ul class="col-3">
+                            <li><a href="#">Română</a></li>
+                            <li><a href="#">македонски</a></li>
+                            <li><a href="#">Русский</a></li>
+                            <li><a href="#">Slovenčina</a></li>
+                            <li><a href="#">Slovenščina</a></li>
+                            <li><a href="#">Suomi</a></li>
+                            <li><a href="#">Svenska</a></li>
+                            <li><a href="#">ไทย</a></li>
+                            <li><a href="#">Türkçe</a></li>
+                            <li><a href="#">简体中文</a></li>
+                            <li><a href="#">繁體中文</a></li>
+                        </ul>
+                        <ul class="col-3">
+                            <li><a href="#">Ελληνικά</a></li>
+                            <li><a href="#">Български</a></li>
+                            <li><a href="#">Srpski</a></li>
+                            <li><a href="#">Українська</a></li>
+                            <li><a href="#">հայերէն</a></li>
+                            <li><a href="#">עברית</a></li>
+                            <li><a href="#">عربي</a></li>
+                            <li><a href="#">فارسی</a></li>
+                            <li><a href="#">हिन्दी</a></li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="close_btn btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="./asset/js/jquery-ui.min.js"></script>
+    <script src="./asset/js/main.js"></script>
+</body>
+
+</html>
