@@ -392,6 +392,7 @@ h1 {
 .record_item {
     position: absolute;
     background-image: url(../img/animations_sprite.png);
+    transition: left 0.3s ease;
 }
 .railway_record {
     left: -680px;

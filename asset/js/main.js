@@ -25,9 +25,32 @@ document.onscroll = function () {
   // devices animation
   var devices = document.querySelectorAll('.device_item')
   for (var device of devices) {
-    let a = 400 / (device.offsetTop - window.scrollY);
+    let x = device.offsetTop - window.scrollY;
+    let y = x > 0 ? x : 1;
+    let a = 400 / y;
     let b = a > 1 ? 1 : a < 0.3 ? 0.3 : a;
     device.style.transform = 'scale(' + b + ')';
     device.style.opacity = a;
   }
+
+  // devices animation
+  {
+    var records = document.querySelectorAll('.record_item')
+    var recordsAnimation = document.querySelector('.records_animation')
+    let x = recordsAnimation.offsetTop - window.scrollY;
+    let y = x > 0 ? x : 1;
+    let a = 200 / y;
+    let b = a > 1 ? 1 : a < 0.3 ? 0.3 : a;
+    records[0].style.left = -680 * b + 'px';
+    records[1].style.left = -460 * b + 'px';
+    records[2].style.left = -330 * b + 'px';
+    records[3].style.left = -60 * b + 'px';
+    records[4].style.left = 40 * b + 'px';
+    records[5].style.left = 170 * b + 'px';
+    records[6].style.left = 370 * b + 'px';
+  }
+
+
+  
 }
+
