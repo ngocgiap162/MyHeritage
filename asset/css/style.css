@@ -23,6 +23,9 @@ img{
     /* height: 100%; */
     object-fit: cover;
 }
+button {
+    min-width: max-content;
+}
 ul {
     margin: 0;
     padding: 0;
@@ -851,3 +854,25 @@ h1 {
     padding: 3px 12px;
 }
 /* modal start trial */
+#startTrialModal {
+    font-size: 12px;
+}
+.bbb_popup_badge {
+    background-image: url(../icon/genealogy_search_ppc_sprite.png);
+    background-position: -103px -345px;
+    height: 71px;
+    width: 57px;
+    float: left;
+    margin-top: 13px;
+    margin-right: 2px;
+    margin-left: 20px;
+}
+.benefits li::before {
+    content: "";
+    background-image: url(../icon/checkmark.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    list-style-type: none;
+    padding-left: 24px;
+    margin-bottom: 4px;
+}
