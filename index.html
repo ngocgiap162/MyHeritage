@@ -271,7 +271,7 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-center d-block d-md-none mt-5">
-                    <btn class="start_free_trial_btn text-white btn mx-auto bg_f56932 px-4">
+                    <btn class="start_free_trial_btn text-white btn mx-auto bg_f56932 px-4" data-toggle="modal" data-target="#startTrialModal">
                         Start free trial
                     </btn>
                 </div>
@@ -419,7 +419,7 @@
                     <div class="line horizontal_line"></div>
                     <div class="line vertical_line"></div>
                 </div>
-                <btn class="start_free_trial_btn text-white btn mx-auto bg_f56932 px-4">
+                <btn class="start_free_trial_btn text-white btn mx-auto bg_f56932 px-4" data-toggle="modal" data-target="#startTrialModal">
                     Start free trial
                 </btn>
             </div>
@@ -640,7 +640,8 @@
         <section class="discover_section">
             <div class="container">
                 <h1>Discover and treasure <br> your unique family history</h1>
-                <btn class="famaly_tree_btn text-white btn mx-auto bg_f56932 px-4">
+                <btn class="start_free_trial_btn text-white btn mx-auto bg_f56932 px-4" data-toggle="modal"
+                    data-target="#startTrialModal">
                     Start free trial
                 </btn>
             </div>
@@ -860,6 +861,46 @@
             </div>
         </div>
 
+        <!-- modal start trial -->
+        <div class="modal fade" id="startTrialModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title mt-4" id="exampleModalLabel">Start your free 14-day trial</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <span>Already a member?</span>
+                            <a>Log in</a>
+                        </div>
+                        <div class="row">
+                            <ul class="col-12 col-sm-6">
+                                <li>
+                                    Over 15.1 billion historical records
+                                </li>
+                                <li>
+                                    3.5 billion family tree profiles worldwide
+                                </li>
+                                <li>
+                                    Automatic matching of records to your family tree
+                                </li>
+                            </ul>
+                            <div class="col-12 col-sm-6">
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="close_btn btn bg_f56932 text-white">Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 
