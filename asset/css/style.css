@@ -336,6 +336,7 @@ h1 {
     position: absolute;
     background: #fff;
     left: 50%;
+    z-index: 1;
 }
 .brancher .horizontal_line { 
     width: 20px;
@@ -361,6 +362,7 @@ h1 {
 }
 .father_parents {
     width: 106px;
+    z-index: 2;
 }
 .mother,
 .father {
@@ -373,6 +375,7 @@ h1 {
 }
 .famaly_tree_section .start_free_trial_btn {
     font-size: 23px;
+    z-index: 2;
 }
 
 /* records section */
@@ -766,6 +769,9 @@ h1 {
 .discover_section h1 {
     margin: 0 0 40px;
 }
+.discover_section .start_free_trial_btn {
+    font-size: 22px;
+}
 
 /* footer section */
 .footer_section {
@@ -844,3 +850,4 @@ h1 {
     background-color: transparent;
     padding: 3px 12px;
 }
+/* modal start trial */
