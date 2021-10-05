@@ -349,7 +349,7 @@ h1 {
     top: 24px;
 }
 .tree_chart > .horizontal_line {
-    width: 200px;
+    width: 100px;
     height: 1px;
     top: 200px;
     transform: translateX(-50%);
@@ -369,6 +369,7 @@ h1 {
     overflow: hidden;
     border-radius: 50%;
     background-color: #fff;
+    transition: all 0.2s ease;
 }
 .famaly_tree_section .start_free_trial_btn {
     font-size: 23px;

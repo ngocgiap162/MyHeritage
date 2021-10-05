@@ -77,6 +77,7 @@
     url(../img/signup_section_bg_mobile.webp);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 50% 0;
   }
   .desktop_captions h1 {
     font-size: 40px;

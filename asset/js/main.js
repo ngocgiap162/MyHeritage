@@ -26,11 +26,27 @@ document.onscroll = function () {
   var devices = document.querySelectorAll('.device_item')
   for (var device of devices) {
     let x = device.offsetTop - window.scrollY - 300;
+    // console.log(device)
     let y = x > 0 ? x : 1;
     let a = 300 / y;
     let b = a > 1 ? 1 : a < 0.3 ? 0.3 : a;
     device.style.transform = 'scale(' + b + ')';
-    device.style.opacity = a;
+    device.style.opacity = b;
+  }
+
+  // family animation
+  var familyItems = document.querySelectorAll('.father_parents, .father, .mother')
+  console.log(familyItems)
+  var treeChart = document.querySelector('.tree_chart')
+  console.log(treeChart.offsetTop)
+  for (var familyItem of familyItems) {
+    var familyItemY = familyItem.offsetTop + treeChart.offsetTop;
+    let x = familyItemY - window.scrollY - 100;
+    let y = x > 0 ? x : 0;
+    let a = 300 / y;
+    let b = a > 1 ? 1 : a < 0 ? 0 : a;
+    familyItem.style.transform = 'scale(' + b + ')';
+    familyItem.style.opacity = b;
   }
 
   // records animation
@@ -50,15 +66,7 @@ document.onscroll = function () {
     records[6].style.left = 370 * b + 'px';
   }
 
-  // discovery animation
-  // var boxItems = document.querySelectorAll('.box_item')
-  // for (var boxItem of boxItems) {
-  //   let x = boxItem.offsetTop - window.scrollY - 300;
-  //   let y = x > 0 ? x : 1;
-  //   let a = 300 / y;
-  //   let b = a > 1 ? 1 : a < 0.3 ? 0.3 : a;
-    
-  // }
+
 
 
 }
