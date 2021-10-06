@@ -1,16 +1,9 @@
-@media (min-width: 576px) {
-   
-}
-
+/* min-width */
 @media (min-width: 768px) {
   /* modal start trial*/
   #startTrialModal .modal-dialog {
     max-width: 546px;
   }
-}
-
-@media (min-width: 992px) {
-
 }
 
 @media (min-width: 1200px) {
@@ -25,11 +18,7 @@
   }
 }
   
-
-
-
-
-
+/* max-width */
 @media (max-width: 1199.98px) {  
   .dna_bg {
     background-size: contain;
@@ -117,8 +106,13 @@
 }
 
 
-
 @media (max-width: 575.98px) {
+  .signup_section {
+    min-height: auto;
+  }
+  /* dna section */
+  .dna_text h1{
+    font-size: 34px;}
   .discovery_animation {
     transform: scale(0.7);
     margin-top: 80px;
@@ -128,5 +122,9 @@
   }
   .login_social button {
     font-size: 18px;
+  }
+  /* footer section */
+  .footer_company {
+    padding-right: 0px;
   }
 }

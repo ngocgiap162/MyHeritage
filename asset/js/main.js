@@ -13,6 +13,7 @@ $('.accessibility_close_btn').click(function () {
   $('.accessibility_menu').toggleClass('show')
 })
 
+// onscroll event
 document.onscroll = function () {
   // community section backgroundColor
   var community = document.querySelector('.community_section')
@@ -23,7 +24,7 @@ document.onscroll = function () {
   }
 
   // devices animation
-  var devices = document.querySelectorAll('.device_item')
+  var devices = document.querySelectorAll('.device_item, .start_free_trial_btn')
   for (var device of devices) {
     let x = device.offsetTop - window.scrollY - 300;
     let y = x > 0 ? x : 1;
@@ -99,9 +100,5 @@ document.onscroll = function () {
     boxItems[15].style.top = 10 * b + 150 - 150 * b + 'px';
     boxItems[16].style.top = 58 * b + 150 - 150 * b + 'px';
   }
-
-
-
-
 }
 
