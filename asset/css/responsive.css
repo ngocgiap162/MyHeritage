@@ -109,7 +109,6 @@
     top: 155px;
   }
 
-
   /* footer_section */
   .footer_section {
     padding: 20px 0;
@@ -122,6 +121,7 @@
 @media (max-width: 575.98px) {
   .discovery_animation {
     transform: scale(0.7);
+    margin-top: 80px;
   }
   .accessibility_menu {
     font-size: 14px;
